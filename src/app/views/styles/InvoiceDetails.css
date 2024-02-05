@@ -1,0 +1,117 @@
+.invoice-details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.invoice-details__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.invoice-details__section {
+  margin-bottom: 15px;
+}
+
+.invoice-details__label {
+  font-weight: bold;
+  color: #555;
+}
+
+.invoice-details__value {
+  color: #777;
+}
+
+.invoice-details__separator {
+  border-top: 2px solid #ccc;
+  margin: 30px 0;
+}
+
+.invoice-details__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.invoice-details__table th,
+.invoice-details__table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.invoice-details__table th {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+.invoice-details__table td {
+  color: #777;
+}
+
+.invoice-details__table tfoot td {
+  text-align: right;
+  font-weight: bold;
+}
+
+.invoice-details__footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.invoice-details__footer p {
+  margin: 10px 0;
+}
+
+/* Additional Styles for Address Section */
+.invoice-details__address {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.invoice-details__address-title {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.invoice-details__address-line {
+  margin-bottom: 5px;
+  color: #777;
+}
+.invoice-details__print-button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.invoice-details__print-button:hover {
+  background-color: #333;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-only,
+  .print-only * {
+    visibility: visible;
+  }
+  .print-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

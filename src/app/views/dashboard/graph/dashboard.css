@@ -1,0 +1,50 @@
+.custom-table thead th {
+    background-color: #424964; /* Replace "blue" with your desired background color */
+    color: white; /* Optional: Set the text color */
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+
+
+  /* Define styles for even rows */
+.custom-table tbody tr:nth-child(even) {
+  background-color: #c4c5c9; /* Replace "#f2f2f2" with your desired even row color */
+}
+
+/* Define styles for odd rows */
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Replace "#ffffff" with your desired odd row color */
+}
+.custom-table tbody td {
+  white-space: nowrap;
+ text-align: center;
+}
+.custom-table table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Set the desired width, e.g., 100% for full width */
+}
+label{
+  color: #008000;
+  font-size: 16px;
+  font-weight: bold;
+}
+select{
+  /* width: 500px; */
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 0px !important;
+}
+
+.form-control.form-control-sm {
+  font-size: .775rem;
+  line-height: 1.5;
+}
+.form-control {
+  min-height: 40px;
+  padding-top: 6px;
+  padding-bottom: 3.28px;
+  transition: all .1s linear;
+  /* width: 500px; */
+}

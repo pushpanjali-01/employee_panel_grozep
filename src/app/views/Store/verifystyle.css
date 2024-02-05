@@ -1,0 +1,257 @@
+.product-img {
+  width: 50px;
+}
+
+.product-details-card {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+.verified-items-s{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+.details-product {
+  display: flex;
+}
+
+.product-name {
+  display: flex;
+  align-items: center;
+}
+
+.product-card {
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.de-card{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+.verified-Products {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.bordered-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bordered-table th,
+.bordered-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 12px;
+}
+.bordered-table th{
+  background-color: #424964;
+ } 
+.bordered-table th {
+  background-color: rgb(227, 240, 245);
+}
+
+.reason-input input {
+  width: 50%;
+  height: 25px;
+}
+
+.reason-input {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.report-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.report-column-section button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(80, 211, 80);
+  color: white;
+}
+
+.remove-btn {
+  width: 55px;
+  height: 35px;
+  background-color: transparent;
+}
+.remove-btn img{
+  width: 20px;
+}
+.remove-btn:hover{
+background-color: transparent;
+}
+
+.reported-heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.inner-card-verify {
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 100%;
+  /* height: 100vh; */
+  overflow-y: auto;
+}
+.product-details-section-verify{
+width: 50%;
+}
+.product-details-section-allotment{
+  width: 50%;
+}
+.inner-card-allotment {
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  width: 100%;
+  /* height: 100vh; */
+  overflow-y: auto;
+  height: 800px;
+}
+.quantity-input input {
+  width: 50%;
+  margin-left: 7px;
+}
+
+.quantity-input {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.verify-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.verify-btn button {
+  width: 100px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.no-data{
+  height: 100vh;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  margin-top: 10px;
+}
+.search-input-container {
+  width: 75%;
+  height: 45px;
+  border-radius: 25px;
+  padding-left: 25px;
+  border: 1px solid #dfdfe0;
+  display: flex;
+  background-color: #dfdfe0;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+
+}
+
+.search-input-container input {
+  border: none;
+  font-size: 20px;
+  background-color: #dfdfe0;
+  outline: none;
+  width: 100%;
+  border-radius: 25px;
+}
+/* Add this CSS to your verifystyle.css file or a separate CSS file */
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the first card */
+.inner-card-verify {
+  flex: 1; /* Equal width for both cards */
+  height: 800px;
+  overflow-y: auto; /* Vertical scrolling */
+  margin-left: 10px; /* Add margin between cards */
+  box-sizing: border-box; /* Ensure padding and border don't affect width */
+}
+
+/* Style for the second card */
+.other-card-class {
+  flex: 1; /* Equal width for both cards */
+  max-height: 800px;
+  overflow-y: auto; /* Vertical scrolling */
+  margin-right: 10px; /* Add margin between cards */
+  box-sizing: border-box; /* Ensure padding and border don't affect width */
+}
+
+/* Style for the table to enable horizontal scrolling */
+.bordered-table {
+  width: 100%; /* Full width of the container */
+  white-space: nowrap; /* Prevent text wrapping in table cells */
+  /* table-layout: fixed; Fix table layout to control column width */
+}
+
+.table-container {
+  max-height: 400px; /* Maximum height for vertical scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+.details-card{
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  height: 50px;
+  padding-top: 20px;
+}
+/* Media Queries for Mobile Screens */
+.details-data{
+  display: flex;
+}
+@media (max-width: 768px) {
+  .product-img {
+    width: 80px;
+  }
+
+  .quantity-input input,
+  .reason-input input {
+    width: 70%;
+  }
+
+  .bordered-table th,
+  .bordered-table td {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .reported-heading {
+    font-size: 20px;
+  }
+
+  .verify-btn button {
+    width: 80px;
+    height: 30px;
+  }
+}
